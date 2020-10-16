@@ -9,6 +9,7 @@ const Container = styled.div`
 
   color: #fff;
   background-image: ${(props) => `url(${props.image})`};
+  background-repeat: no-repeat;
 
   h1 {
     font-size: 1.375rem; // 22px
@@ -38,7 +39,12 @@ const Container = styled.div`
     top: 0;
     z-index: 0;
 
-    background: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(
+      to bottom,
+      rgba(76, 76, 76, 0) 0%,
+      rgba(15, 15, 15, 0.88) 80%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
   }
 `;
 
