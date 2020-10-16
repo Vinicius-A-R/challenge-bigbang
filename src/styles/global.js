@@ -8,12 +8,11 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
-html, body, #root{
-  min-height: 100%;
-}
 
 body {
-  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+  margin: 0 auto;
+  
+  font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
