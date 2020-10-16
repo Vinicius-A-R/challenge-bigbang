@@ -1,6 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+:root{
+  --font-title: 'DM Serif Text', serif;
+  --color-gradient: linear-gradient(
+      to bottom,
+      rgba(76, 76, 76, 0) 0%,
+      rgba(15, 15, 15, 0.88) 80%,
+      rgba(0, 0, 0, 0.88) 100%
+    );
+}
+
 *{
   margin: 0;
   padding: 0;
