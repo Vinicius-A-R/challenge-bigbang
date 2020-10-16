@@ -8,13 +8,17 @@ const Container = styled.div`
   height: 14.375rem; //345px
 
   color: #fff;
-  background-image: ${(props) => `url(${props.image})`};
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-image: ${(props) => `url(${props.image})`};
 
   h1 {
-    font-size: 1.375rem; // 22px
-    font-family: 'DM Serif Text', serif;
     margin-bottom: 12px;
+
+    font-size: 1.375rem; // 22px
+    font-weight: 400;
+    font-family: var(--font-title);
   }
 
   div {
@@ -22,6 +26,7 @@ const Container = styled.div`
 
     span {
       font-size: 12px;
+      font-weight: 700;
       margin-right: 1.5rem;
     }
   }
@@ -39,12 +44,7 @@ const Container = styled.div`
     top: 0;
     z-index: 0;
 
-    background: linear-gradient(
-      to bottom,
-      rgba(76, 76, 76, 0) 0%,
-      rgba(15, 15, 15, 0.88) 80%,
-      rgba(0, 0, 0, 0.88) 100%
-    );
+    background: var(--color-gradient);
   }
 `;
 
@@ -55,7 +55,7 @@ const TravelCard = ({ title, type, author, image }) => (
 
       <div>
         <span>{type}</span>
-        <span>{author}</span>
+        <span>por {author}</span>
       </div>
     </div>
   </Container>
