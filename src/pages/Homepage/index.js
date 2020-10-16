@@ -1,12 +1,15 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-// import { Container } from './styles';
+import MainContent from '../../components/MainContent';
+
+import { Container } from './styles';
 
 function Homepage() {
   return (
-    <div>
-      <h1>Homepage</h1>
-    </div>
+    <Container>
+      <Route path="/" component={MainContent} />
+    </Container>
   );
 }
 
