@@ -2,20 +2,18 @@ import React from 'react';
 
 import TravelCard from '../TravelCard';
 import NewsLetterInput from '../NewsLetterInput';
+import TitleSection from '../TitleSection';
 
 import blog1 from '../../assets/blog-1.png';
 import blog2 from '../../assets/blog-2.png';
 import blog3 from '../../assets/blog-3.png';
 
 import { CgArrowLongRight } from 'react-icons/cg';
-import { Container, Section, Ads, Card, Button, Sign } from './styles';
+import { Container, Ads, Card, Button, Sign } from './styles';
 
 const HomeBlog = () => (
   <Container>
-    <Section>
-      <div></div>
-      <h1>Blog</h1>
-    </Section>
+    <TitleSection title="Blog" />
 
     <TravelCard
       title="Lorem ipsum dolor sit amet. conseetetur adipiscing elit"
@@ -45,7 +43,7 @@ const HomeBlog = () => (
       </Card>
 
       <Card>
-        <img src={blog3} alt="" />
+        <img src={blog2} alt="" />
 
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
 
