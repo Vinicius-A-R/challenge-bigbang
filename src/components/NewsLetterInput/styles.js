@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 1.5rem 0.75rem;
-  border: 0.125rem solid #000;
+  width: 100%;
 
   > h1 {
+    color: #666;
+    font-size: var(--font-size-medium-m);
     text-align: center;
   }
 
@@ -22,11 +23,12 @@ export const Container = styled.div`
 export const Input = styled.form`
   display: flex;
   justify-content: center;
-  width: 100%;
 
+  width: 100%;
   margin: 1.5rem 0;
 
   input {
+    width: 100%;
     height: 3rem;
     margin-right: 0.75rem; //12px
 
@@ -35,16 +37,10 @@ export const Input = styled.form`
   }
 
   button {
-    border: 1px solid #000;
     padding: 0.75rem;
-  }
-`;
 
-export const Footer = styled.div`
-  display: flex;
-
-  span {
-    color: #666;
-    text-align: center;
+    font-weight: 700;
+    border: 1px solid #000;
+    text-transform: uppercase;
   }
 `;

@@ -62,6 +62,25 @@ export const Card = styled.div`
   }
 `;
 
+export const Sign = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem var(--font-size-small-m);
+
+  border: 2px solid #000;
+
+  h1 {
+    margin-bottom: var(--font-size-small-m);
+  }
+
+  > span {
+    color: #666;
+    text-align: center;
+  }
+`;
+
 export const Button = styled.button.attrs({
   type: 'button',
 })`
@@ -77,7 +96,7 @@ export const Button = styled.button.attrs({
   background-color: #73a8a0;
 
   svg {
-    font-size: 1rem;
+    font-size: var(--font-size-medium);
     margin-left: 0.5rem;
   }
 `;

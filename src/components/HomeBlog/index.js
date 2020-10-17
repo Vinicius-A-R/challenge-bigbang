@@ -1,14 +1,14 @@
 import React from 'react';
 
 import TravelCard from '../TravelCard';
-import NewsLetter from '../NewLetter';
+import NewsLetterInput from '../NewsLetterInput';
 
 import blog1 from '../../assets/blog-1.png';
 import blog2 from '../../assets/blog-2.png';
 import blog3 from '../../assets/blog-3.png';
 
 import { CgArrowLongRight } from 'react-icons/cg';
-import { Container, Section, Ads, Card, Button } from './styles';
+import { Container, Section, Ads, Card, Button, Sign } from './styles';
 
 const HomeBlog = () => (
   <Container>
@@ -58,7 +58,16 @@ const HomeBlog = () => (
       </Card>
     </Ads>
 
-    <NewsLetter />
+    <Sign>
+      <h1>Namah no seu e-mail</h1>
+
+      <NewsLetterInput />
+
+      <span>
+        Ao clicar em "assinar", você concorda em receber e-mails do Espaço Namah
+        a aceita nossos. Termos de Uso e nossas Políticas de Privacidade.
+      </span>
+    </Sign>
 
     <Button>
       VEJA TODOS OS POSTS <CgArrowLongRight />
