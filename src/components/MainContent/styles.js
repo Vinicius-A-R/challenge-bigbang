@@ -7,19 +7,24 @@ export const Container = styled.section`
 `;
 
 export const Ads = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
   display: flex;
-  justify-content: space-between;
+
+  width: 100%;
 `;
 
 export const Card = styled.div`
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
-  width: 100%;
-  max-width: 10.3125rem;
+  max-width: 100%;
   height: 14.4375rem;
-  padding: 0.75rem;
+  padding: 8px;
 
   background-size: cover;
   background-repeat: no-repeat;

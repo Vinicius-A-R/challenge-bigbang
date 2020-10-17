@@ -1,12 +1,15 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-// import { Container } from './styles';
+import HomeBlog from '../../components/HomeBlog';
+
+import { Container } from './styles';
 
 function Blog() {
   return (
-    <div>
-      <h1>OI</h1>
-    </div>
+    <Container>
+      <Route path="/" component={HomeBlog} />
+    </Container>
   );
 }
 
