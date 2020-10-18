@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { ReactComponent as Cart } from '../../assets/cart.svg';
@@ -9,7 +10,9 @@ import { VscAccount, VscHeart, VscThreeBars } from 'react-icons/vsc';
 function Header() {
   return (
     <Container>
-      <Logo className="logo" />
+      <Link to="/">
+        <Logo className="logo" />
+      </Link>
 
       <Menu>
         <VscAccount />
