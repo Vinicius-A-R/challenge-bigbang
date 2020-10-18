@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-// import { Container } from './styles';
+import HomeShop from '../../components/HomeShop';
 
 function Shop() {
   return (
     <div>
-      <Route />
+      <Route path="/" component={HomeShop} />
     </div>
   );
 }
