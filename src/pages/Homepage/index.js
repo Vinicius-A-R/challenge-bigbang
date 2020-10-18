@@ -7,6 +7,8 @@ import Shop from '../Shop';
 import Courses from '../../pages/Courses';
 import Podcast from '../../pages/Podcast';
 
+import GridConcept from '../../components/GridConcept';
+
 import { Container } from './styles';
 
 function Homepage() {
@@ -17,6 +19,8 @@ function Homepage() {
       <Route path="/" component={Shop} />
       <Route path="/" component={Courses} />
       <Route path="/" component={Podcast} />
+
+      <GridConcept />
     </Container>
   );
 }
