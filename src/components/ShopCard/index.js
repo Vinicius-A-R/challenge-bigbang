@@ -8,6 +8,7 @@ const Container = styled.div`
   flex-direction: column;
 
   width: 100%;
+  margin: 0.75rem 0;
 
   img {
     width: 100%;

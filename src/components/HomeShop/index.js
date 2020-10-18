@@ -21,9 +21,10 @@ function HomeShop() {
       <Carousel>
         <Slider
           dots
+          rows={2}
           arrows={false}
           slidesToShow={2}
-          slidesPerRow={2}
+          // slidesPerRow={2}
           shift={16}
         >
           <ShopCard image={shop1} title="Ovo de Páscoa de Paçoca" price={65} />
