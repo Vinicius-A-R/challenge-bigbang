@@ -3,10 +3,18 @@ import { Route } from 'react-router-dom';
 
 import styled from 'styled-components';
 
-const Container = styled.div``;
+import HomePodcast from '../../components/HomePodcast';
+
+const Container = styled.div`
+  width: 100%;
+`;
 
 function Podcast() {
-  return <div />;
+  return (
+    <Container>
+      <Route path="/" component={HomePodcast} />
+    </Container>
+  );
 }
 
 export default Podcast;

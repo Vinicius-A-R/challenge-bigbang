@@ -5,6 +5,7 @@ import MainContent from '../../components/MainContent';
 import Blog from '../Blog';
 import Shop from '../Shop';
 import Courses from '../../pages/Courses';
+import Podcast from '../../pages/Podcast';
 
 import { Container } from './styles';
 
@@ -15,6 +16,7 @@ function Homepage() {
       <Route path="/" component={Blog} />
       <Route path="/" component={Shop} />
       <Route path="/" component={Courses} />
+      <Route path="/" component={Podcast} />
     </Container>
   );
 }
