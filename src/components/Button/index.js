@@ -9,6 +9,8 @@ const Container = styled(Link)`
   align-items: center;
   justify-content: center;
 
+  grid-column: span 6;
+
   width: 100%;
   height: 3rem;
 
@@ -25,6 +27,10 @@ const Container = styled(Link)`
     svg {
       margin-left: 0.5rem;
     }
+  }
+
+  @media (min-width: 768px) {
+    grid-column: 3 / span 2;
   }
 `;
 

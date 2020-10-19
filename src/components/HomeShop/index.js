@@ -11,14 +11,17 @@ import TitleSection from '../TitleSection';
 import ShopCard from '../ShopCard';
 import Button from '../Button';
 
-import { Container, Carousel } from './styles';
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
+import { Container, CarouselMobile, CarouselWeb } from './styles';
+
+// Slider -> has problems with useState, when use setState broke the code
 
 function HomeShop() {
   return (
     <Container>
       <TitleSection title="Namah Shop" />
 
-      <Carousel>
+      <CarouselMobile>
         <Slider dots rows={2} arrows={false} slidesToShow={2} shift={8}>
           <ShopCard image={shop1} title="Ovo de Páscoa de Paçoca" price={65} />
           <ShopCard image={shop2} title="Ovo de Páscoa de Paçoca" price={65} />
@@ -29,7 +32,34 @@ function HomeShop() {
           <ShopCard image={shop3} title="Ovo de Páscoa de Paçoca" price={65} />
           <ShopCard image={shop4} title="Ovo de Páscoa de Paçoca" price={65} />
         </Slider>
-      </Carousel>
+      </CarouselMobile>
+
+      <CarouselWeb>
+        <Slider
+          dots
+          prevArrow={
+            <FaArrowAltCircleLeft color={'var(--color-green)'} size={20} />
+          }
+          nextArrow={
+            <FaArrowAltCircleRight color={'var(--color-green)'} size={20} />
+          }
+          rows={1}
+          wheel={true}
+          duration={300}
+          arrows={true}
+          centerMode={true}
+          slidesToShow={3}
+        >
+          <ShopCard image={shop1} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop2} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop3} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop4} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop1} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop2} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop3} title="Ovo de Páscoa de Paçoca" price={65} />
+          <ShopCard image={shop4} title="Ovo de Páscoa de Paçoca" price={65} />
+        </Slider>
+      </CarouselWeb>
 
       <Button link="/shop" title="veja todos os produtos" />
     </Container>

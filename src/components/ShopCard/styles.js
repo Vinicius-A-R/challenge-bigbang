@@ -7,6 +7,7 @@ export const Container = styled.div`
 
   width: 100%;
   max-width: 171px;
+  margin: 0 0.5rem;
 
   img {
     width: 100%;
@@ -32,6 +33,16 @@ export const Container = styled.div`
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 282px;
+    /* height: 463px; */
+
+    img {
+      width: 100%;
+      height: 375px;
+    }
   }
 `;
 

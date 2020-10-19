@@ -51,6 +51,10 @@ const Container = styled.div`
     height: 100%;
 
     grid-column: span 3;
+
+    h1 {
+      width: 80%;
+    }
   }
 `;
 

@@ -2,7 +2,6 @@ import React from 'react';
 
 // Cards
 import Banner from '../Banner';
-import TravelCard from '../TravelCard';
 import CastCard from '../CastCard';
 
 //IMAGES
