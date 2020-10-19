@@ -16,11 +16,11 @@ function Homepage() {
   return (
     <Container>
       <Route path="/" component={MainContent} />
-      <Route path="/" component={Blog} />
-      <Route path="/" component={Shop} />
 
       <Recomendations />
 
+      <Route path="/" component={Blog} />
+      <Route path="/" component={Shop} />
       <Route path="/" component={Courses} />
       <Route path="/" component={Podcast} />
 

@@ -7,6 +7,7 @@ export const Container = styled.div`
   grid-gap: 1rem;
 
   margin-top: 2rem;
+  padding: 0.75rem;
 
   overflow-x: scroll;
 
@@ -15,6 +16,11 @@ export const Container = styled.div`
 
   &::-webkit-scrollbar {
     height: 0;
+  }
+
+  @media (min-width: 768px) {
+    grid-auto-columns: 180px;
+    grid-template-rows: 260px;
   }
 `;
 
