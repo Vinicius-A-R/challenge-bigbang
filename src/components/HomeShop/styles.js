@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   h1 {
@@ -17,5 +16,3 @@ export const Carousel = styled.div`
     color: var(--color-green);
   }
 `;
-
-export const Button = styled(Link)``;

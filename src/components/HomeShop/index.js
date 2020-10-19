@@ -19,14 +19,7 @@ function HomeShop() {
       <TitleSection title="Namah Shop" />
 
       <Carousel>
-        <Slider
-          dots
-          rows={2}
-          arrows={false}
-          slidesToShow={2}
-          // slidesPerRow={2}
-          shift={16}
-        >
+        <Slider dots rows={2} arrows={false} slidesToShow={2} shift={8}>
           <ShopCard image={shop1} title="Ovo de Páscoa de Paçoca" price={65} />
           <ShopCard image={shop2} title="Ovo de Páscoa de Paçoca" price={65} />
           <ShopCard image={shop3} title="Ovo de Páscoa de Paçoca" price={65} />
