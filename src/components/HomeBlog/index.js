@@ -13,7 +13,7 @@ import { Container, Ads, Card, Button, Sign } from './styles';
 
 const HomeBlog = () => (
   <Container>
-    <TitleSection title="Blog" />
+    <TitleSection className="title" title="Blog" />
 
     <TravelCard
       title="Lorem ipsum dolor sit amet. conseetetur adipiscing elit"
@@ -21,6 +21,7 @@ const HomeBlog = () => (
       author="Fulano de Tal"
       image={blog1}
     />
+
     <TravelCard
       title="Lorem ipsum dolor sit amet. conseetetur adipiscing elit"
       type="VIAGEM"

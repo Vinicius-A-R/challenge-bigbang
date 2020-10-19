@@ -6,6 +6,7 @@ const Container = styled.div`
   width: 100%;
 
   display: flex;
+  align-items: center;
   justify-content: center;
 
   h1 {
@@ -24,6 +25,10 @@ const Container = styled.div`
     top: 50%;
     transform: translateY(-50%);
     border: 1px solid #c4c4c4;
+  }
+
+  @media (min-width: 768px) {
+    grid-column: span 6;
   }
 `;
 

@@ -49,6 +49,8 @@ const Container = styled.div`
 
   @media (min-width: 768px) {
     height: 100%;
+
+    grid-column: span 3;
   }
 `;
 

@@ -5,6 +5,11 @@ export const Container = styled.div`
   grid-gap: 1.5rem;
 
   width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px 392px 1fr 80px;
+  }
 `;
 
 export const Ads = styled.div`
@@ -14,6 +19,11 @@ export const Ads = styled.div`
 
   img {
     width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    grid-gap: 1.5rem;
+    grid-column: span 4;
   }
 `;
 
@@ -53,6 +63,10 @@ export const Sign = styled.div`
     color: #666;
     text-align: center;
   }
+
+  @media (min-width: 768px) {
+    grid-column: span 2;
+  }
 `;
 
 export const Button = styled.button.attrs({
@@ -72,5 +86,10 @@ export const Button = styled.button.attrs({
   svg {
     font-size: var(--font-size-medium);
     margin-left: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    align-self: center;
+    grid-column: 3 / span 2;
   }
 `;

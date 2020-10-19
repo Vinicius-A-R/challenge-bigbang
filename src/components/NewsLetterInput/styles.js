@@ -43,4 +43,18 @@ export const Input = styled.form`
     border: 1px solid #000;
     text-transform: uppercase;
   }
+
+  @media (min-width: 768px) {
+    align-items: center;
+    flex-direction: column;
+
+    input {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+
+    button {
+      width: 50%;
+    }
+  }
 `;
