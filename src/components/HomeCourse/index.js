@@ -1,34 +1,98 @@
 import React from 'react';
+import Slider from 'infinite-react-carousel';
 
 import course from '../../assets/cursos-04-large.png';
 
 import TitleSection from '../TitleSection';
 import Button from '../Button';
 
-import { FaLongArrowAltRight } from 'react-icons/fa';
-import { Container, Card, Info, ButtonLink } from './styles';
+import Card from './Card';
+
+import { Container, CarouselMobile, CarouselWeb } from './styles';
+
+// Slider -> has problems with useState, when use setState broke the code
 
 function HomeCourse() {
   return (
     <Container>
       <TitleSection title="Cursos" />
 
-      <Card>
-        <img src={course} alt="course" />
+      <CarouselMobile>
+        <Slider
+          dots
+          rows={1}
+          wheel={true}
+          duration={300}
+          centerPadding={0}
+          arrows={false}
+          centerMode={false}
+          slidesToShow={1}
+        >
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+        </Slider>
+      </CarouselMobile>
 
-        <Info>
-          <span className="date">04 Abr - 05 Abr</span>
-
-          <h1>Imersão Vinyasa Flow</h1>
-
-          <span>Por Fernanda Cunha</span>
-          <span>2 dias de curso</span>
-        </Info>
-
-        <ButtonLink>
-          <FaLongArrowAltRight />
-        </ButtonLink>
-      </Card>
+      <CarouselWeb>
+        <Slider
+          dots
+          rows={1}
+          wheel={true}
+          duration={300}
+          centerPadding={0}
+          arrows={false}
+          centerMode={false}
+          slidesToShow={3}
+        >
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+          <Card
+            image={course}
+            date="04 Abr - 05 Abr"
+            title="Imersão Vinyasa Flow"
+            teacher="Fernanda Cunha"
+            time="2 dias de curso"
+          />
+        </Slider>
+      </CarouselWeb>
 
       <Button link="/course" title="veja todos os cursos" />
     </Container>

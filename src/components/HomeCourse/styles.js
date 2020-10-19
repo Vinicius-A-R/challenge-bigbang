@@ -5,52 +5,20 @@ export const Container = styled.div`
   height: 100%;
 `;
 
-export const Card = styled.div`
-  position: relative;
-  margin: 2rem 0;
+export const CarouselMobile = styled.div`
+  display: block;
+  margin-bottom: 1rem;
 
-  -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
-
-  h1 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-  }
-
-  img {
-    width: 100%;
-    height: 160px;
-    margin-bottom: 1.5rem;
-
-    filter: grayscale(25%);
-  }
-
-  span {
-    padding: 2px 0;
-  }
-
-  .date {
-    color: var(--color-green);
-    font-size: 14px;
-    font-weight: 700;
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
+export const CarouselWeb = styled.div`
+  display: none;
+  margin-bottom: 1rem;
 
-  padding: 0.75rem;
-`;
-
-export const ButtonLink = styled.div`
-  position: absolute;
-
-  right: 0;
-  bottom: 0;
-  margin: 1rem;
-
-  color: var(--color-green);
-  font-size: 1.5rem;
+  @media (min-width: 768px) {
+    display: block;
+  }
 `;
