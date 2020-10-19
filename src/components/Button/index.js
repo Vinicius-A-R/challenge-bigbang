@@ -23,6 +23,7 @@ const Container = styled(Link)`
     align-items: center;
 
     font-size: 1rem;
+    text-transform: uppercase;
 
     svg {
       margin-left: 0.5rem;
