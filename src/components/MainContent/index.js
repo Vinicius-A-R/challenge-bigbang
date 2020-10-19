@@ -15,19 +15,23 @@ import condicionador from '../../assets/condicionador-1.png';
 import { CgArrowLongRight } from 'react-icons/cg';
 
 // STYLES
-import { Container, Ads, Card } from './styles';
+import { Container, Ads, Card, CardTravel } from './styles';
 
 function MainContent() {
   return (
     <Container>
       <Banner />
 
-      <TravelCard
-        image={travel}
-        title="Lorem ipsum dolor sit amet conseetetur adipiscing elit"
-        type="VIAGEM"
-        author="Fulano de Tal"
-      />
+      <CardTravel image={travel}>
+        <div className="filter">
+          <h1>Lorem ipsum dolor sit amet conseetetur adipiscing elit</h1>
+
+          <div>
+            <span>VIAGEM</span>
+            <span>por Fulano de Tal</span>
+          </div>
+        </div>
+      </CardTravel>
 
       <CastCard
         image={cast}

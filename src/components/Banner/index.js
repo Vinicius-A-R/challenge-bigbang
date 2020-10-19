@@ -36,6 +36,12 @@ const Container = styled.div`
       margin-top: 8px;
     }
   }
+
+  @media (min-width: 768px) {
+    height: 250px;
+
+    grid-column: 1 / 3;
+  }
 `;
 
 const Banner = () => (

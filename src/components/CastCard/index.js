@@ -37,6 +37,10 @@ const Container = styled.div`
 
     background: var(--color-gradient);
   }
+
+  @media (min-width: 768px) {
+    height: 100%;
+  }
 `;
 
 const TravelCard = ({ title, type, image }) => (
