@@ -35,7 +35,7 @@ function HomePodcast() {
         </ButtonLink>
       </Card>
 
-      <Button title="veja todos os podcasts" />
+      <Button link="/podcast" title="veja todos os podcasts" />
     </Container>
   );
 }

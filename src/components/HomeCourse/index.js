@@ -30,7 +30,7 @@ function HomeCourse() {
         </ButtonLink>
       </Card>
 
-      <Button title="veja todos os cursos" />
+      <Button link="/course" title="veja todos os cursos" />
     </Container>
   );
 }
