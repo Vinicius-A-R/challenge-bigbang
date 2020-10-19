@@ -13,7 +13,11 @@ export const Grid = styled.div`
   grid-gap: 1rem;
 
   img {
-    width: 105px;
-    height: 105px;
+    width: 100%;
+    max-height: 180px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
   }
 `;
