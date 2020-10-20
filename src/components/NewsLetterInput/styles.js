@@ -18,10 +18,17 @@ export const Container = styled.div`
     text-align: center;
     font-size: 1.125rem;
   }
+
+  @media (min-width: 768px) {
+    > h1 {
+      text-align: left;
+    }
+  }
 `;
 
 export const Input = styled.form`
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   width: 100%;
@@ -45,12 +52,13 @@ export const Input = styled.form`
   }
 
   @media (min-width: 768px) {
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
+    margin: 0;
 
     input {
       margin: 0;
-      margin-bottom: 1.5rem;
+      margin-right: 1rem;
     }
 
     button {
