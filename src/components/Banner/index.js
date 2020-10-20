@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import image from '../../assets/img-1.png';
 
@@ -44,11 +45,31 @@ const Container = styled.div`
   }
 `;
 
+const Button = styled(Link)`
+  display: none;
+
+  width: 180px;
+  height: 36px;
+  margin-top: 1rem;
+
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--color-green);
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
 const Banner = () => (
   <Container>
     <div>
       <h1>Lorem ipsum dolor sit amet</h1>
       <span>Lorem ipsum dolor sit amet</span>
+
+      <Button>LOREM IPSUM</Button>
     </div>
   </Container>
 );
