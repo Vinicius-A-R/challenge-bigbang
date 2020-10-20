@@ -1,20 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 import MenuMobile from './MenuMobile';
+import MenuWeb from './MenuWeb';
 
 import { Container } from './styles';
 
 function Header() {
   return (
     <Container>
-      <Link to="/">
-        <Logo className="logo" />
-      </Link>
+      <MenuWeb Logo={Logo} />
 
-      <MenuMobile />
+      <MenuMobile Logo={Logo} />
     </Container>
   );
 }

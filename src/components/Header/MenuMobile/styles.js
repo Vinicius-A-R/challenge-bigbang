@@ -7,7 +7,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  width: 50%;
+  width: 100%;
 
   svg {
     color: #666;
@@ -24,7 +24,13 @@ export const Container = styled.div`
   }
 `;
 
-export const Toggle = styled.div``;
+export const Toggle = styled.div`
+  width: 32px;
+
+  svg {
+    width: 32px;
+  }
+`;
 
 export const Menu = styled.div`
   position: absolute;
