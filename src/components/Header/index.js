@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { ReactComponent as Logo } from '../../assets/logo.svg';
-import { ReactComponent as Cart } from '../../assets/cart.svg';
 
-import { Container, Menu } from './styles';
-import { VscAccount, VscHeart, VscThreeBars } from 'react-icons/vsc';
+import MenuMobile from './MenuMobile';
+
+import { Container } from './styles';
 
 function Header() {
   return (
@@ -14,12 +14,7 @@ function Header() {
         <Logo className="logo" />
       </Link>
 
-      <Menu>
-        <VscAccount />
-        <VscHeart />
-        <Cart className="cart" />
-        <VscThreeBars />
-      </Menu>
+      <MenuMobile />
     </Container>
   );
 }

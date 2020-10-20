@@ -12,20 +12,3 @@ export const Container = styled.div`
     height: 56px;
   }
 `;
-
-export const Menu = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 0.7;
-
-  svg {
-    color: #666;
-    font-size: 1.5rem;
-  }
-
-  .cart {
-    width: auto;
-    height: 1.5rem; // 18px
-  }
-`;
