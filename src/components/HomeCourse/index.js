@@ -22,9 +22,10 @@ function HomeCourse() {
           dots
           rows={1}
           wheel={true}
-          duration={300}
-          centerPadding={0}
           arrows={false}
+          shift={16}
+          duration={300}
+          centerPadding={8}
           centerMode={false}
           slidesToShow={1}
         >
