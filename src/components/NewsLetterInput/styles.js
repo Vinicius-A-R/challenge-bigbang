@@ -21,7 +21,7 @@ export const Container = styled.div`
 
   @media (min-width: 768px) {
     > h1 {
-      text-align: left;
+      text-align: center;
     }
   }
 `;
@@ -29,6 +29,7 @@ export const Container = styled.div`
 export const Input = styled.form`
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   width: 100%;
@@ -37,15 +38,16 @@ export const Input = styled.form`
   input {
     width: 100%;
     height: 3rem;
-    margin-right: 0.75rem; //12px
 
     padding: 0.5rem;
     border: 1px solid #666;
   }
 
   button {
+    width: 50%;
     padding: 0.75rem;
 
+    margin-top: 1rem;
     font-weight: 700;
     border: 1px solid #000;
     text-transform: uppercase;
@@ -54,15 +56,18 @@ export const Input = styled.form`
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 0;
 
     input {
-      margin: 0;
+      margin: 1rem 0;
       margin-right: 1rem;
     }
 
     button {
       width: 50%;
+      height: 48px;
+      margin: 0;
     }
   }
 `;

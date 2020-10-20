@@ -58,7 +58,8 @@ const HomeBlog = () => (
     </Ads>
 
     <Sign>
-      <h1>Namah no seu e-mail</h1>
+      <h1>Namah</h1>
+      <h2>no seu e-mail</h2>
 
       <NewsLetterInput />
 

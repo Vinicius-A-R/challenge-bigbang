@@ -50,12 +50,25 @@ export const Sign = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem var(--font-size-small-m);
+  padding: 1rem 1rem;
 
   border: 2px solid #000;
 
-  h1 {
+  > h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--font-title);
     margin-bottom: var(--font-size-small-m);
+  }
+
+  > h2 {
+    position: relative;
+    top: -32px;
+
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--font-title);
   }
 
   > span {
@@ -64,6 +77,7 @@ export const Sign = styled.div`
   }
 
   @media (min-width: 768px) {
+    justify-content: space-evenly;
     grid-column: span 2;
   }
 `;
