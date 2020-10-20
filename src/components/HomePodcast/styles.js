@@ -1,63 +1,30 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 80px 1fr 80px;
 `;
 
-export const Card = styled.div`
-  position: relative;
+export const CarouselMobile = styled.div`
+  grid-column: span 6;
 
-  width: 100%;
-  margin: 2rem 0;
+  margin-bottom: 1.5rem;
 
-  -webkit-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
-
-  img {
-    width: 100%;
-    height: 160px;
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 
-export const Info = styled.div`
-  padding: 0.75rem;
+export const CarouselWeb = styled.div`
+  display: none;
+  grid-column: span 6;
 
-  h1 {
-    font-size: 1rem;
-    margin: 0.75rem 0;
-  }
+  margin-bottom: 1.5rem;
 
-  .cast {
-    color: var(--color-green);
-    font-weight: 700;
-  }
-
-  span {
+  @media (min-width: 768px) {
     display: block;
-    font-size: 12px;
-    width: 72%;
   }
-`;
-
-export const ButtonLink = styled(Link)`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 3rem;
-  height: 3rem;
-
-  right: 0;
-  bottom: 0;
-  margin: 1rem;
-
-  transform: rotate(90deg);
-
-  color: #fff;
-  font-size: 1.5rem;
-  border-radius: 50%;
-  background-color: var(--color-green);
 `;
